@@ -1,0 +1,120 @@
+<html>
+
+<head>
+  <title> Weather Station </title>
+  <link rel="stylesheet" href="style.css/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css/all.css">
+
+</head>
+
+<body>
+  <div>
+    <div class="contaier">
+      <img src="images/grass.jpg" alt="">
+      <h1>Weather Station</h1>
+
+    </div>
+    <div id="modal1" class="modal modal1">
+    </div>
+
+    <div id="modal2" class="modal modal2">
+    </div>
+  </div>
+  <!-- Button trigger modal -->
+  <button type="button" id="modal1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Temperature and Humidity
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ESP32 DHT Server</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-borderless">
+
+            <tbody>
+              <tr>
+                <th scope="row"><img class="temp" src="images/temp.png" alt=""></i></th>
+                <td>Temperature</td>
+                <td>23.80 celsius</td>
+
+              </tr>
+
+              <tr>
+                <th scope="row"><img class="hum" src="images/humidity.png" alt=""></th>
+                <td>Humidity</td>
+                <td>17.00 %</td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!----------------------------------------------------------------------------------------------------------------- -->
+
+
+  <!-- Button trigger modal -->
+  <button type="button" id="modal2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+    Pressure and Altitude
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">ESP32 DHT Server</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-borderless">
+
+            <tbody>
+              <tr>
+                <th scope="row"><img class="temp" src="images/pres.png" alt=""></i></th>
+                <td>Pressure</td>
+                <td>1017 hPa</td>
+
+              </tr>
+
+              <tr>
+                <th scope="row"><img class="hum" src="images/alti.png" alt=""></th>
+                <td>Altitude</td>
+                <td>40 Feet</td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
